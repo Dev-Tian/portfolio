@@ -12,6 +12,7 @@
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/icons.css" />
     <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
@@ -68,41 +69,24 @@
         <!-- about wrapper -->
         <div class="about">
           <div class="grad-pic-holder">
-            <div class="grad-pic">
-              <svg viewBox="0 0 300 300" class="circle-word">
-                <defs>
-                  <path
-                    id="circlePath"
-                    d="M150,150
-                    m-120,0
-                    a120,120 0 1,1 240,0
-                    a120,120 0 1,1 -240,0"
-                  />
-                </defs>
-                <text fill="black" font-size="40">
-                  <textPath href="#circlePath">
-                    - CRISTIAN SIMBAJON - WEB DEVELOPER
-                  </textPath>
-                </text>
-              </svg>
-            </div>
+            <div class="grad-pic" data-aos="fade"></div>
           </div>
           <div class="about-caption">
             <p class="section-subtitle">Who Am I ?</p>
             <h2 class="section-title mb-3">About Me</h2>
-            <p>
+            <p class="" data-aos="fade-up">
               I’m Cristian Reyes Simbajon a passionate Web Developer with a
               solid foundation in front-end and back-end technologies. I
               specialize in building responsive, user-friendly websites using
-              Typescript, HTML, CSS, Bootstrap, Tailwind and JavaScript,
-              Vanilla, React, Next.js. On the server side, I work with PHP and
-              the Laravel framework to create robust and scalable web
-              applications, MySQL databases for efficient data management. I
-              enjoy turning complex problems into clean, efficient code and am
-              always focused on delivering functional, visually appealing, and
-              high-performing solutions. Whether it's developing from scratch or
-              improving existing systems, I aim to create seamless digital
-              experiences that meet both user needs and business goals.
+              Typescript, HTML, CSS, Bootstrap, Tailwind and JavaScript, React,
+              Next.js. On the server side, I work with PHP and the Laravel
+              framework to create robust and scalable web applications, MySQL
+              databases for efficient data management. I enjoy turning complex
+              problems into clean, efficient code and am always focused on
+              delivering functional, visually appealing, and high-performing
+              solutions. Whether it's developing from scratch or improving
+              existing systems, I aim to create seamless digital experiences
+              that meet both user needs and business goals.
             </p>
             <a
               href="assets/CV_Cristian_Reyes_Simbajon_.pdf"
@@ -113,6 +97,7 @@
           </div>
         </div>
         <!-- end of about wrapper -->
+        <!-- education wrapper -->
       </div>
       <!-- end of container -->
     </section>
@@ -126,7 +111,7 @@
         <!-- row -->
         <div class="row">
           <div class="col-md-12 col-lg-4">
-            <div class="service-card">
+            <div class="service-card border">
               <div class="body">
                 <img src="assets/imgs/pencil-case.svg" class="icon" />
                 <h6 class="title">Custom Website Development</h6>
@@ -139,7 +124,7 @@
             </div>
           </div>
           <div class="col-md-12 col-lg-4">
-            <div class="service-card">
+            <div class="service-card border">
               <div class="body">
                 <img src="assets/imgs/responsive.svg" class="icon" />
                 <h6 class="title">Responsive Web Design</h6>
@@ -152,7 +137,7 @@
             </div>
           </div>
           <div class="col-md-12 col-lg-4">
-            <div class="service-card">
+            <div class="service-card border">
               <div class="body">
                 <img src="assets/imgs/toolbox.svg" class="icon" />
                 <h6 class="title">Web Application Development</h6>
@@ -164,8 +149,10 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="row mt-3">
           <div class="col-md-12 col-lg-4">
-            <div class="service-card">
+            <div class="service-card border">
               <div class="body">
                 <img src="assets/imgs/analytics.svg" class="icon" />
                 <h6 class="title">Backend Development</h6>
@@ -178,10 +165,10 @@
             </div>
           </div>
           <div class="col-md-12 col-lg-4">
-            <div class="service-card">
+            <div class="service-card border">
               <div class="body">
                 <img src="assets/imgs/toolbox.svg" class="icon" />
-                <h6 class="title">Landing Pages & One-Page Sites</h6>
+                <h6 class="title">Landing Pages</h6>
                 <p class="subtitle">
                   Need a fast, modern landing page for your product or service?
                   I build clean, optimized one-pagers that convert visitors into
@@ -191,7 +178,7 @@
             </div>
           </div>
           <div class="col-md-12 col-lg-4">
-            <div class="service-card">
+            <div class="service-card border">
               <div class="body">
                 <img src="assets/imgs/pencil-case.svg" class="icon" />
                 <h6 class="title">API Integration</h6>
@@ -243,5 +230,12 @@
 
     <!-- Meyawo js -->
     <script src="assets/js/meyawo.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: false,
+      });
+    </script>
   </body>
 </html>
