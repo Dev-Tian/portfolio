@@ -12717,7 +12717,7 @@ pre .code {
 /* sections */
 .section {
   padding: 70px 10px;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #001f5c;
 }
 
 .section .section-title {
@@ -12742,14 +12742,18 @@ pre .code {
   padding: 100px 0 !important;
 }
 .border:hover {
-  animation: glow 1s forwards;
+  animation: shadow 1s forwards;
 }
 
-@keyframes glow {
+@keyframes shadow {
   from {
     box-shadow: none;
   }
   to {
     box-shadow: 13px 13px 50px -24px #000000;
   }
+}
+
+.bordered {
+  border: 0.5px solid #e8e8e8;
 }
